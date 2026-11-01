@@ -10,7 +10,7 @@ jobs:
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: '21'
+          java-version: '25'
       - name: Extrair o projeto
         run: unzip -q "$(ls *.zip | head -1)" -d mod
       - name: Gerar o .jar
